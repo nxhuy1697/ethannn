@@ -34,7 +34,6 @@ export default function RootLayout({
         <Nav />
         <Header />
         <PageTransition>
-
         <Transition />
         {children}
 

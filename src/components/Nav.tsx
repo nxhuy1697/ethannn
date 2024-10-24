@@ -38,7 +38,7 @@ export const navData = [
   },
   {
     name: "testmonials",
-    path: "/testmonials",
+    path: "/testimonials",
     icon: <HiChatBubbleBottomCenterText />,
   },
   {
