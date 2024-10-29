@@ -22,7 +22,7 @@ import {
 } from "react-icons/si";
 
 //counter
-import CountUp from "react-countUp";
+import CountUp from "react-countup";
 //  data
 const aboutData = [
   {
