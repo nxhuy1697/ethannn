@@ -10,9 +10,11 @@ const PageTransition = ({
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div className="h-full" key={pathname}>
-        {children}
-      </motion.div>
+      <>
+        <motion.div className="h-full" key={pathname}>
+          {children}
+        </motion.div>
+      </>
     </AnimatePresence>
   );
 };
