@@ -8,7 +8,6 @@ import TopLeftImg from "@/components/TopLeftImg";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
 
-import { usePathname } from "next/navigation";
 import Transition from "@/components/Transition";
 import PageTransition from "@/components/PageTransition";
 
@@ -30,7 +29,7 @@ export default function RootLayout({
       <body
         className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
       >
-        <TopLeftImg />
+        {/* <TopLeftImg /> */}
         <Nav />
         <Header />
         <PageTransition>

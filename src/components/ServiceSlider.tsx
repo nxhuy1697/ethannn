@@ -62,6 +62,7 @@ const ServiceSlider = () => {
       freeMode={true}
       pagination={{
         clickable: true,
+
       }}
       modules={[FreeMode, Pagination]}
       className="h-[240px] sm:h-[340px] "
@@ -75,7 +76,10 @@ const ServiceSlider = () => {
               {/* title & desc  */}
               <div className="mb-8">
                 <div className="mb-2 text-lg"> {item.title} </div>
-                <p className="max-w-[350px] leading-normal "> {item.description} </p>
+                <p className="max-w-[350px] leading-normal ">
+                  {" "}
+                  {item.description}{" "}
+                </p>
               </div>
               {/* arrow  */}
               <div className="text-3xl">

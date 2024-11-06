@@ -109,6 +109,9 @@ const aboutData = [
 import Avatar from "@/components/Avatar";
 import Circles from "@/components/Circles";
 
+//translation
+import "@/utils/i18n";
+import { Trans } from "react-i18next";
 const About = () => {
   const [index, setIndex] = useState(0);
 
@@ -129,6 +132,7 @@ const About = () => {
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text  */}
         <div className="flex-1 flex flex-col justify-center">
+          <Trans i18nKey="about_title">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -139,6 +143,8 @@ const About = () => {
             Captivating <span className="text-accent">stories</span> birth
             magnificent designs.
           </motion.h2>
+
+          </Trans>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"

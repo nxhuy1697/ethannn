@@ -32,6 +32,7 @@ const Socials = () => {
     <Link href={''} className="hover:text-accent transition-all duration-300" >
     <RiPinterestLine/>
     </Link>
+    
   </div>;
 };
 

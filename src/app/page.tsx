@@ -9,7 +9,10 @@ import PraticlesContainer from "@/components/ParticlesContainer";
 import ProjectsBtns from "@/components/ProjectsBtns";
 //variants
 import { fadeIn } from "../../variant";
-import { section } from "framer-motion/client";
+
+//translation
+import "@/utils/i18n";
+import { Trans } from "react-i18next";
 
 export default function Home() {
   return (
@@ -18,28 +21,32 @@ export default function Home() {
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 ">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title  */}
-          <motion.h1
-            variants={fadeIn("down", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h1"
-          >
-            Transforming Idea <br /> Into{" "}
-            <span className="text-accent">Digital Reality </span>
-          </motion.h1>
+          <Trans i18nKey="home_title">
+            <motion.h1
+              variants={fadeIn("down", 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="h1"
+            >
+              Transforming Ideas
+              <span className="block">
+                Into <span className="text-accent">Digital Reality</span>
+              </span>
+            </motion.h1>
+          </Trans>
           {/* subtitle  */}
-          <motion.p
-            variants={fadeIn("down", 0.3)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-sm xl:max-w-xl max-auto xl:mx-0 mb-10 xl:mb-16"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            sunt quasi tempora aspernatur vero omnis assumenda fugit quam
-            quibusdam aliquam.{" "}
-          </motion.p>
+
+            <motion.p
+              variants={fadeIn("down", 0.3)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="max-w-sm xl:max-w-xl max-auto xl:mx-0 mb-10 xl:mb-16"
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi possimus deserunt repudiandae ab animi aliquid corporis facere et magnam reiciendis.
+            </motion.p>
+
           {/* btn  */}
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtns />
@@ -61,7 +68,7 @@ export default function Home() {
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
         {/* practicle  */}
 
-          <PraticlesContainer/> 
+        <PraticlesContainer />
 
         {/* avatar img  */}
         <motion.div
@@ -69,8 +76,8 @@ export default function Home() {
           initial="hidden"
           animate="show"
           exit="hidden"
-          transition={{duration:1, ease:'easeInOut'}}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%] "
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="w-full h-full max-w-[400px] max-h-[500px] absolute -bottom-32  lg:bottom-[20%] lg:right-[8%] "
         >
           <Avatar />
         </motion.div>
