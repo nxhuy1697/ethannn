@@ -1,4 +1,38 @@
 {
   "home_title": "<0>Biến Các Ý Tưởng<1>Thành <1>Hiện Thực Số</1></1></0>",
-  "about_title":"<0>Những <1>câu chuyện</1> hấp dẫn tạo ra thiết kế lộng lẫy. </0>"
+  "about_title":"<0>Những <1>câu chuyện</1> hấp dẫn tạo ra thiết kế lộng lẫy. </0>",
+  "services_title":"<0>Các Dịch Vụ <1>.</1> </0>",
+  "work_title":"<0>Tin Tức <1>.</1> </0>",
+  "test_title":"<0>Tuyển Dụng <1>.</1></0>",
+  "contact_title":"<0>Liên Hệ Với <1>Chúng Tôi.</1></0>",
+  "contact_form_name": "Tên",
+  "contact_form_subject": "Tiêu Đề",
+  "contact_form_mess": "Nội Dung",
+  "contact_btn": "<0>Gửi!</0>",
+  "nav":{
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "services": "Dịch Vụ",
+    "work": "Tin Tức",
+    "testmonials": "Tuyển Dụng",
+    "contact": "Liên Hệ"
+  },
+  "about":{
+    "skills": "Kỹ năng",
+    "awards": "Giải thưởng",
+    "experience": "Kinh nghiệm",
+    "credentials": "Bằng cấp",
+    "y_o_p": "Năm Kinh Nghiệm",
+    "client": "Khách hàng hài lòng",
+    "project": "Dự Án Hoàn Thành",
+    "win": "Giải Thưởng"
+  },
+  "services": {
+    "branding": "Nhãn Hàng",
+    "designs": "Thiết Kế",
+    "development": "Phát Triển",
+    "copywritting": "Quảng Cáo",
+    "seo": "SEO"
+  }
+  
 }

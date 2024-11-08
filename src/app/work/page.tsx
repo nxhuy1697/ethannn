@@ -7,6 +7,9 @@ import WorkSlider from "@/components/WorkSlider";
 //framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../variant";
+//translation
+import "@/utils/i18n";
+import { Trans } from "react-i18next";
 
 const Work = () => {
   return (
@@ -16,6 +19,7 @@ const Work = () => {
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text  */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0 ">
+            <Trans i18nKey="work_title">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
@@ -23,8 +27,10 @@ const Work = () => {
               exit="hidden"
               className="h2 xl:mt-12"
             >
-              My Work <span className="text-accent">.</span>
+              News <span className="text-accent">.</span>
             </motion.h2>
+
+            </Trans>
             <motion.p
               variants={fadeIn("up", 0.4)}
               initial="hidden"

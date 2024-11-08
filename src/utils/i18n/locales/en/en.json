@@ -1,4 +1,37 @@
 {
   "home_title": "<0>Transforming Ideas<1>Into <1>Digital Reality</1></1></0>",
-  "about_title":"<0>Captivating <1>stories</1> birth magnificent designs. </0>"
+  "about_title":"<0>Captivating <1>stories</1> birth magnificent designs. </0>",
+  "services_title":"<0>My Services</0>",
+  "work_title":"<0>News <1>.</1> </0>",
+  "test_title":"<0>Recruitment <1>.</1></0>",
+  "contact_title":"<0>Contact <1>Us.</1></0>",
+  "contact_form_name": "Name",
+  "contact_form_subject": "Subject",
+  "contact_form_mess": "Message",
+  "contact_btn": "Send!",
+  "nav":{
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "work": "News",
+    "testmonials": "Recruitment",
+    "contact": "Contact Us"
+  },
+  "about":{
+    "skills": "Skills",
+    "awards": "Awards",
+    "experience": "Experience",
+    "credentials": "Credentials",
+    "y_o_p": "Year of experience",
+    "client": "Satisfied clients",
+    "project": "Finished projects",
+    "win": "Winning awards"
+  },
+  "services": {
+    "branding": "branding",
+    "designs": "designs",
+    "development": "development",
+    "copywritting": "copywritting",
+    "seo": "SEO"
+  }
 }

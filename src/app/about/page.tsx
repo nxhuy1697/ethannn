@@ -111,10 +111,11 @@ import Circles from "@/components/Circles";
 
 //translation
 import "@/utils/i18n";
-import { Trans } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
+
 const About = () => {
   const [index, setIndex] = useState(0);
-
+  const { t } = useTranslation();
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
@@ -173,7 +174,7 @@ const About = () => {
                   <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Year of experience
+                  {t('about.y_o_p')}
                 </div>
               </div>
               {/* clients  */}
@@ -182,7 +183,7 @@ const About = () => {
                   <CountUp start={0} end={250} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Satisfied clients
+                  {t('about.client')}
                 </div>
               </div>
               {/* projects */}
@@ -191,7 +192,7 @@ const About = () => {
                   <CountUp start={0} end={650} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Finished projects
+                {t('about.project')}
                 </div>
               </div>
               {/* award  */}
@@ -200,7 +201,7 @@ const About = () => {
                   <CountUp start={0} end={8} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Winning awards
+                {t('about.win')}
                 </div>
               </div>
             </div>
@@ -230,7 +231,7 @@ const About = () => {
                   }`}
                   onClick={() => setIndex(itemIndex)}
                 >
-                  {item.title}
+                  {t(`about.${item.title}`)}
                 </div>
               );
             })}

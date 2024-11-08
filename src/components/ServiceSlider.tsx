@@ -16,38 +16,41 @@ import {
 } from "react-icons/rx";
 //import required modules
 import { FreeMode, Pagination } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 //service data
 const serviceData = [
   {
     icon: <RxCrop />,
-    title: "Branding",
+    title: "services.branding",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     icon: <RxPencil2 />,
-    title: "Design",
+    title: "services.designs",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     icon: <RxDesktop />,
-    title: "Development",
+    title: "services.development",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     icon: <RxReader />,
-    title: "Copywritting",
+    title: "services.copywritting",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     icon: <RxRocket />,
-    title: "SEO",
+    title: "services.seo",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
 ];
 
 const ServiceSlider = () => {
+  const {t} = useTranslation();
   return (
+ 
     <Swiper
       breakpoints={{
         320: {
@@ -62,7 +65,6 @@ const ServiceSlider = () => {
       freeMode={true}
       pagination={{
         clickable: true,
-
       }}
       modules={[FreeMode, Pagination]}
       className="h-[240px] sm:h-[340px] "
@@ -75,7 +77,7 @@ const ServiceSlider = () => {
               <div className="text-4xl text-accent mb-4"> {item.icon} </div>
               {/* title & desc  */}
               <div className="mb-8">
-                <div className="mb-2 text-lg"> {item.title} </div>
+                <div className="mb-2 text-lg"> {t(`${item.title}`)} </div>
                 <p className="max-w-[350px] leading-normal ">
                   {" "}
                   {item.description}{" "}
