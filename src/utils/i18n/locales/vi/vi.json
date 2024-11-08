@@ -1,9 +1,5 @@
 {
-  "home_title": "<0>Biến Các Ý Tưởng<1>Thành <1>Hiện Thực Số</1></1></0>",
   "about_title":"<0>Những <1>câu chuyện</1> hấp dẫn tạo ra thiết kế lộng lẫy. </0>",
-  "services_title":"<0>Các Dịch Vụ <1>.</1> </0>",
-  "work_title":"<0>Tin Tức <1>.</1> </0>",
-  "test_title":"<0>Tuyển Dụng <1>.</1></0>",
   "contact_title":"<0>Liên Hệ Với <1>Chúng Tôi.</1></0>",
   "contact_form_name": "Tên",
   "contact_form_subject": "Tiêu Đề",
@@ -17,6 +13,11 @@
     "testmonials": "Tuyển Dụng",
     "contact": "Liên Hệ"
   },
+  "home":{
+    "title_part1": "Biến Các Ý Tưởng",
+    "title_part2": "Thành",
+    "title_part3": "Hiện Thực Số"
+  },
   "about":{
     "skills": "Kỹ năng",
     "awards": "Giải thưởng",
@@ -28,11 +29,18 @@
     "win": "Giải Thưởng"
   },
   "services": {
+    "title": "Các Dịch Vụ",
     "branding": "Nhãn Hàng",
     "designs": "Thiết Kế",
     "development": "Phát Triển",
     "copywritting": "Quảng Cáo",
     "seo": "SEO"
+  },
+  "work": {
+    "title": "Tin Tức"
+  },
+  "testmonials": {
+    "title": "Tuyển Dụng"
   }
   
 }

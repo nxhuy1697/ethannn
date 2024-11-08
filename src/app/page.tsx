@@ -12,16 +12,17 @@ import { fadeIn } from "../../variant";
 
 //translation
 import "@/utils/i18n";
-import { Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const {t} = useTranslation()
   return (
     <div className="bg-primary/60 h-full">
       {/* text  */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 ">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title  */}
-          <Trans i18nKey="home_title">
+
             <motion.h1
               variants={fadeIn("down", 0.2)}
               initial="hidden"
@@ -29,12 +30,12 @@ export default function Home() {
               exit="hidden"
               className="h1"
             >
-              Transforming Ideas
+              {t('home.title_part1')}
               <span className="block">
-                Into <span className="text-accent">Digital Reality</span>
+                {t('home.title_part2')} <span className="text-accent">{t('home.title_part3')}</span>
               </span>
             </motion.h1>
-          </Trans>
+
           {/* subtitle  */}
 
             <motion.p

@@ -7,6 +7,7 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
+import { useState } from 'react'
 
 //Link
 import Link from "next/link";
@@ -51,8 +52,13 @@ export const navData = [
 
 const Nav = () => {
   const pathname = usePathname();
-  const {t} = useTranslation()
-
+  const { t, i18n } = useTranslation()
+  const [currentLanguage, setCurrentLanguage] = useState('en')
+  const handleChangeLanguage = () => {
+    setCurrentLanguage(currentLanguage === "en" ? "vi" : "en")
+    i18n.changeLanguage(currentLanguage)
+  }
+  console.log(currentLanguage)
   return (
     <nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen ">
       {/* inner  */}
@@ -77,8 +83,20 @@ const Nav = () => {
               {/* icon  */}
               <div>{link.icon}</div>
             </Link>
+            
           );
         })}
+      </div>
+      <div>
+
+      <button
+      className="btn btn-primary me-2"
+      onClick={() => 
+        handleChangeLanguage()
+      }
+    >
+      Change language EN - VI
+    </button>
       </div>
     </nav>
   );

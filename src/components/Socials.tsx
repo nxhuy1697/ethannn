@@ -1,3 +1,4 @@
+
 import React from "react";
 //link
 import Link from "next/link";
@@ -10,9 +11,12 @@ import {
   RiPinterestLine,
 } from "react-icons/ri";
 
+
+
 //icons
 
 const Socials = () => {
+ 
   return <div className="flex items-center gap-x-5 text-lg" >
     <Link href={''} className="hover:text-accent transition-all duration-300" >
     <RiYoutubeLine/>
@@ -32,7 +36,8 @@ const Socials = () => {
     <Link href={''} className="hover:text-accent transition-all duration-300" >
     <RiPinterestLine/>
     </Link>
-    
+
+   
   </div>;
 };
 
