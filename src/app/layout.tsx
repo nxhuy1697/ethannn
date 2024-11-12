@@ -1,7 +1,7 @@
 
 import type { Metadata } from "next";
 import "./globals.css";
-import { Sora } from "next/font/google";
+import { Sora, Roboto } from "next/font/google";
 
 //components
 import TopLeftImg from "@/components/TopLeftImg";
@@ -21,6 +21,11 @@ const sora = Sora({
   variable: "--font-sora",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
+const roboto = Roboto({
+  subsets: ["vietnamese"],
+  variable: "--font-roboto",
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -28,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
+        className={`page bg-site text-white bg-cover bg-no-repeat ${roboto.variable} font-roboto relative`}
       >
         {/* <TopLeftImg /> */}
         <Nav />

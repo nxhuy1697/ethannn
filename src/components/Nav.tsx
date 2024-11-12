@@ -89,14 +89,7 @@ const Nav = () => {
       </div>
       <div>
 
-      <button
-      className="btn btn-primary me-2"
-      onClick={() => 
-        handleChangeLanguage()
-      }
-    >
-      Change language EN - VI
-    </button>
+     
       </div>
     </nav>
   );

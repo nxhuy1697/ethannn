@@ -36,6 +36,7 @@ const config: Config = {
         'spin-slow': 'spin 6s linear infinite',
       },
       fontFamily: {
+        roboto: [`var(--font-roboto)`, 'sans-serif'],
         poppins: [`var(--font-poppins)`, 'sans-serif'],
         sora: [`var(--font-sora)`, 'sans-serif'],
       },
