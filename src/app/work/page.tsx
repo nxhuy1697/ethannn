@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../../variant";
 //translation
 import "@/utils/i18n";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Work = () => {
   const {t} = useTranslation()
@@ -30,8 +30,6 @@ const Work = () => {
             >
               {t('work.title')} <span className="text-accent">.</span>
             </motion.h2>
-
-
             <motion.p
               variants={fadeIn("up", 0.4)}
               initial="hidden"

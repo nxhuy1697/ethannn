@@ -39,7 +39,8 @@
     "seo": "SEO"
   },
   "work": {
-    "title": "News"
+    "title": "News",
+     "news": "Article"
   },
   "testmonials": {
     "title": "Recruitment"
