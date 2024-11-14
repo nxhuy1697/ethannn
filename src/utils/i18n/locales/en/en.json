@@ -44,5 +44,8 @@
   },
   "testmonials": {
     "title": "Recruitment"
+  },
+  "details": {
+    "title": "Details"
   }
 }

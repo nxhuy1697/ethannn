@@ -14,40 +14,43 @@ import Link from "next/link";
 
 //next router
 import { usePathname } from "next/navigation";
+//translation
+import "@/utils/i18n";
 import { useTranslation } from "react-i18next";
 
 //nav data
 export const navData = [
   {
-    name: "home",
+    name: "nav.home",
     path: "/",
     icon: <HiHome />,
   },
   {
-    name: "about",
+    name: "nav.about",
     path: "/about",
     icon: <HiUser />,
   },
   {
-    name: "services",
+    name: "nav.services",
     path: "/services",
     icon: <HiRectangleGroup />,
   },
   {
-    name: "work",
+    name: "nav.work",
     path: "/work",
     icon: <HiViewColumns />,
   },
   {
-    name: "testmonials",
+    name: "nav.testmonials",
     path: "/testimonials",
     icon: <HiChatBubbleBottomCenterText />,
   },
   {
-    name: "contact",
+    name: "nav.contact",
     path: "/contact",
     icon: <HiEnvelope />,
   },
+ 
 ];
 
 const Nav = () => {
@@ -75,7 +78,7 @@ const Nav = () => {
               {/* tooltip  */}
               <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
                 <div className="bg-white relative flex text-primary items-center p-[6px] ">
-                  <div className="text-[12px] leading-none font-semibold capitalize "> {t(`nav.${link.name}`)}</div>
+                  <div className="text-[12px] leading-none font-semibold capitalize "> {t(`${link.name}`)}</div>
                   {/* triangle  */}
                   <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2 "></div>
                 </div>

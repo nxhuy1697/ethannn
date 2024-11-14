@@ -5,6 +5,8 @@ import { Sora, Roboto } from "next/font/google";
 
 //components
 import TopLeftImg from "@/components/TopLeftImg";
+import dynamic from "next/dynamic";
+
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
 
@@ -40,9 +42,11 @@ export default function RootLayout({
         <Header />
         <PageTransition>
         <Transition />
+
         {children}
 
         </PageTransition>
+
       </body>
     </html>
   );
