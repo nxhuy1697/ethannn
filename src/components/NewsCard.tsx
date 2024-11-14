@@ -4,7 +4,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function NewsCard() {
   return (
-    <ScrollArea className="h-[550px] overflow-y-scroll p-2 border border-accent rounded">
+    <ScrollArea className="h-[550px] p-2 border border-accent rounded">
     <div className='flex flex-col space-y-2'>
     <Image src='/details.jpg' alt='forest' width={737} height={678} />
     <p className='text-lg font-semibold'>Title</p>
