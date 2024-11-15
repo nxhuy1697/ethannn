@@ -22,7 +22,15 @@ export default function Home() {
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 ">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title  */}
-
+          <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+      >
+        <Avatar />
+      </motion.div>
             <motion.h1
               variants={fadeIn("down", 0.2)}
               initial="hidden"
