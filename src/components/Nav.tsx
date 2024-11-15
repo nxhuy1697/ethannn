@@ -7,7 +7,7 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
-import { useState } from 'react'
+import { useState } from "react";
 
 //Link
 import Link from "next/link";
@@ -17,6 +17,14 @@ import { usePathname } from "next/navigation";
 //translation
 import "@/utils/i18n";
 import { useTranslation } from "react-i18next";
+
+//tooltip
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 //nav data
 export const navData = [
@@ -50,51 +58,47 @@ export const navData = [
     path: "/contact",
     icon: <HiEnvelope />,
   },
- 
 ];
 
 const Nav = () => {
   const pathname = usePathname();
-  const { t, i18n } = useTranslation()
-  const [currentLanguage, setCurrentLanguage] = useState('en')
-  const handleChangeLanguage = () => {
-    setCurrentLanguage(currentLanguage === "en" ? "vi" : "en")
-    i18n.changeLanguage(currentLanguage)
-  }
-  console.log(currentLanguage)
-  return (
-    <nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen ">
-      {/* inner  */}
-      <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full ">
-        {navData.map((link, index) => {
-          return (
-            <Link
-              key={index}
-              href={link.path}
-              className={`${
-                link.path === pathname && "text-accent"
-              } relative flex items-center group hover:text-accent transition-all duration-300`}
-            >
-              {/* tooltip  */}
-              <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
-                <div className="bg-white relative flex text-primary items-center p-[6px] ">
-                  <div className="text-[12px] leading-none font-semibold capitalize "> {t(`${link.name}`)}</div>
-                  {/* triangle  */}
-                  <div className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2 "></div>
-                </div>
-              </div>
-              {/* icon  */}
-              <div>{link.icon}</div>
-            </Link>
-            
-          );
-        })}
-      </div>
-      <div>
+  const { t } = useTranslation();
 
-     
-      </div>
-    </nav>
+  return (
+    <TooltipProvider delayDuration={100}>
+      <nav className="flex flex-col items-center xl:justify-center fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen ">
+        {/* inner  */}
+        <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full ">
+          {navData.map((link, index) => {
+            return (
+              <Tooltip key={index}>
+                <TooltipTrigger>
+                <Link
+                key={index}
+                href={link.path}
+                className={`${
+                  link.path === pathname && "text-accent"
+                } relative flex items-center group hover:text-accent transition-all duration-300`}
+              >
+                {/* icon  */}
+                {link.icon}
+              </Link>
+                </TooltipTrigger>
+                 <TooltipContent
+                  side="right"
+                  sideOffset={8}
+                  className="z-50 bg-white text-primary text-[12px] font-semibold capitalize py-[2px] rounded-md shadow-md dark:bg-gray-800 dark:text-white border border-gray-200 dark:border-gray-700"
+                >
+                  {t(`${link.name}`)}
+                  
+                </TooltipContent>
+              </Tooltip>
+             
+            );
+          })}
+        </div>
+      </nav>
+    </TooltipProvider>
   );
 };
 

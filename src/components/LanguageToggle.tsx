@@ -20,7 +20,7 @@ const LanguageToggle: React.FC = () => {
         <Icon icon="flagpack:vn" height={15} className="rounded-sm" />
       </button>
       <button onClick={() => handleLanguageChange("en")}>
-        <Icon icon="flagpack:us" height={15} className="rounded-sm" />
+      <Icon icon="flagpack:gb-ukm"height={15} className="rounded-sm" />
       </button>
     </div>
   );
