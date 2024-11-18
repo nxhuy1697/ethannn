@@ -15,7 +15,7 @@ import "@/utils/i18n";
 import { useTranslation } from "react-i18next";
 
 export default function Home() {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <div className="bg-primary/60 h-full">
       {/* text  */}
@@ -23,38 +23,39 @@ export default function Home() {
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title  */}
           <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
-      >
-        <Avatar />
-      </motion.div>
-            <motion.h1
-              variants={fadeIn("down", 0.2)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-              className="h1"
-            >
-              {t('home.title_part1')}
-              <span className="block">
-                {t('home.title_part2')} <span className="text-accent">{t('home.title_part3')}</span>
-              </span>
-            </motion.h1>
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden xl:flex absolute bottom-0 -left-[370px]"
+          >
+            <Avatar />
+          </motion.div>
+          <motion.h1
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="text-[35px] font-bold mb-10"
+          >
+            {t('home.title_part1')} <span className="text-accent">{t('home.title_part2')} </span>
+          </motion.h1>
 
           {/* subtitle  */}
 
-            <motion.p
-              variants={fadeIn("down", 0.3)}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
-              className="max-w-sm xl:max-w-xl max-auto xl:mx-0 mb-10 xl:mb-16"
-            >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi possimus deserunt repudiandae ab animi aliquid corporis facere et magnam reiciendis.
-            </motion.p>
+          <motion.div
+            variants={fadeIn("down", 0.3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-sm xl:max-w-[710px] max-auto xl:mx-0 mb-10 xl:mb-16 text-right"
+          >
+            <p>{t('home.content_line1')} </p>
+            <p>{t('home.content_line2')}</p>
+            <p>{t('home.content_line3')}</p>
+            <p>{t('home.content_line4')}</p>
+
+          </motion.div>
 
           {/* btn  */}
           <div className="flex justify-center xl:hidden relative">
@@ -85,7 +86,6 @@ export default function Home() {
           initial="hidden"
           animate="show"
           exit="hidden"
-      
           transition={{ duration: 1, ease: "easeInOut" }}
           className="w-full h-full max-w-[400px] max-h-[500px] absolute -bottom-32  lg:bottom-[20%] lg:right-[15%] "
         >

@@ -1,13 +1,14 @@
 "use client";
 //icons
-import { HiHome, HiUser } from "react-icons/hi";
+import { HiHome } from "react-icons/hi";
 import {
   HiViewColumns,
   HiRectangleGroup,
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
-import { useState } from "react";
+import { IoMdInformationCircle } from "react-icons/io";
+import { MdWork } from "react-icons/md";
 
 //Link
 import Link from "next/link";
@@ -36,7 +37,7 @@ export const navData = [
   {
     name: "nav.about",
     path: "/about",
-    icon: <HiUser />,
+    icon: <IoMdInformationCircle />,
   },
   {
     name: "nav.services",
@@ -49,9 +50,9 @@ export const navData = [
     icon: <HiViewColumns />,
   },
   {
-    name: "nav.testmonials",
-    path: "/testimonials",
-    icon: <HiChatBubbleBottomCenterText />,
+    name: "nav.recruit",
+    path: "/recruit",
+    icon: <MdWork />,
   },
   {
     name: "nav.contact",
@@ -73,27 +74,25 @@ const Nav = () => {
             return (
               <Tooltip key={index}>
                 <TooltipTrigger>
-                <Link
-                key={index}
-                href={link.path}
-                className={`${
-                  link.path === pathname && "text-accent"
-                } relative flex items-center group hover:text-accent transition-all duration-300`}
-              >
-                {/* icon  */}
-                {link.icon}
-              </Link>
+                  <Link
+                    key={index}
+                    href={link.path}
+                    className={`${
+                      link.path === pathname && "text-accent"
+                    } relative flex items-center group hover:text-accent transition-all duration-300`}
+                  >
+                    {/* icon  */}
+                    {link.icon}
+                  </Link>
                 </TooltipTrigger>
-                 <TooltipContent
+                <TooltipContent
                   side="right"
                   sideOffset={8}
                   className="z-50 bg-white text-primary text-[12px] font-semibold capitalize py-[2px] rounded-md shadow-md dark:bg-gray-800 dark:text-white border border-gray-200 dark:border-gray-700"
                 >
                   {t(`${link.name}`)}
-                  
                 </TooltipContent>
               </Tooltip>
-             
             );
           })}
         </div>

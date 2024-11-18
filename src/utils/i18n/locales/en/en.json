@@ -1,8 +1,4 @@
 {
-  "about_title": "<0>Captivating <1>stories</1> birth magnificent designs. </0>",
-  "work_title": "<0>News <1>.</1> </0>",
-  "test_title": "<0>Recruitment <1>.</1></0>",
-  "contact_title": "<0>Contact <1>Us.</1></0>",
   "contact_form_name": "Name",
   "contact_form_subject": "Subject",
   "contact_form_mess": "Message",
@@ -12,38 +8,56 @@
     "about": "About",
     "services": "Services",
     "work": "News",
-    "testmonials": "Recruitment",
+    "recruit": "Recruitment",
     "contact": "Contact Us"
   },
   "home": {
-    "title_part1": "Transforming Ideas",
-    "title_part2": "Into",
-    "title_part3": "Digital Reality"
+    "title_part1": "Transforming Ideas Into",
+    "title_part2": "Digital Reality",
+    "content_line1": "With over 20 years of experience in managing and executing public and private projects, both",
+    "content_line2": "domestically and internationally, we understand the needs and work of our clients. The digital",
+    "content_line3": "technology platform we have developed and continuously improved ensures that DP Unity's solutions",
+    "content_line4": "not only meet the business requirements but also deliver exceptional value."
   },
   "about": {
-    "skills": "Skills",
-    "awards": "Awards",
-    "experience": "Experience",
-    "credentials": "Credentials",
-    "y_o_p": "Year of experience",
-    "client": "Satisfied clients",
-    "project": "Finished projects",
-    "win": "Winning awards"
+    "title_part1": "Why",
+    "title_part2": "DP Unity?",
+    "content": "DPUnity is a pioneering company in the field of digital transformation, with a mission to deliver optimal technology solutions for businesses. DPUnity is committed to providing solutions that not only meet the needs but also enhance operational efficiency for clients. We combine clear strategies, advanced technology, and an experienced team to ensure that each project delivers exceptional value. By choosing DPUnity, you are choosing a trusted partner.",
+    "strat": "Strategy",
+    "solution": "Solution",
+    "tech": "Technology",
+    "exp": "Experience",
+    "para_first": "Building strong partnerships with many leading companies, this ensures continuous support and long-term growth opportunities for projects.",
+    "para_second": "Providing comprehensive solutions from consulting, software development, to implementation and maintenance, helping clients save time and resources.",
+    "para_third": "Applying advanced technologies such as machine learning and cloud computing to deliver modern, intelligent solutions for businesses.",
+    "para_fourth": "Having participated in many large-scale international projects, demonstrating the capability to handle complex projects and meet the demands of major clients."
   },
   "services": {
-    "title": "My Services",
-    "branding": "Branding",
-    "designs": "Designs",
-    "development": "Development",
-    "copywritting": "Copywritting",
-    "seo": "SEO"
+    "title": "Services",
+    "parah": "DPUnity provides comprehensive technology services that help businesses enhance performance and optimize processes. We accompany our clients from the research and development phase to the deployment and operation of systems.",
+    "soft_dev": "Software Development",
+    "soft_dev_content":"Receiving requests, providing technology consulting, and developing complete solutions tailored to the actual needs of the clients.",
+    "hard_dev": "Hardware Deployment",
+    "hard_dev_content":"Deploy compatible hardware integrated with the software solution.",
+    "implementation": "Implementation Consulting",
+    "implementation_content":"Consulting businesses on implementing new technologies that are closely aligned with practical needs to optimize processes.",
+    "operation": "Operate The System",
+    "operation_content":"Providing continuous support services, maintenance, and timely troubleshooting. Managing and operating the entire system.",
+    "rnd_content":"Focusing on researching new technologies and developing innovative solutions to help businesses keep up with technology trends and optimize operations."
+
   },
   "work": {
     "title": "News",
-     "news": "Article"
+    "news": "Article"
   },
-  "testmonials": {
-    "title": "Recruitment"
+  "recruit": {
+    "title": "Recruitment",
+    "intern": "Internship",
+    "intern_text":"We are looking for dynamic interns who are passionate about technology and eager to learn. This is a great opportunity for students to develop their skills and gain practical experience. Interns will receive training, work directly with a team of experts, and have the chance to participate in real-world tasks. If you wish to develop your career in the technology industry and take on exciting challenges, join DPUnity today!",
+    "dev": "Web/Mobile Developer",
+    "dev_text":"We are looking for candidates with strong experience in web application development (using Next.js, React, etc.) and mobile development (Flutter, React Native, etc.). You will have the opportunity to work with advanced technologies, participate in the product development process from design to deployment, and develop your skills in a dynamic, professional work environment. Join DPUnity to grow your career and create groundbreaking technology products!",
+    "program": "Deployment Programming",
+    "program_text":"DPUnity is looking for API developers for industry-specific applications on the Windows platform to join our software development team. We need candidates with strong experience in designing and developing robust and efficient APIs for industry-specific applications. You will work with technologies such as .NET, C#, and Windows development tools to build optimal technology solutions for complex systems and applications."
   },
   "details": {
     "title": "Details"

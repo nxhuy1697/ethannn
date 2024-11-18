@@ -17,40 +17,40 @@ import {
 //import required modules
 import { FreeMode, Pagination } from "swiper/modules";
 import { useTranslation } from "react-i18next";
+import { ScrollArea } from "./ui/scroll-area";
 
 //service data
 const serviceData = [
   {
     icon: <RxCrop />,
-    title: "services.branding",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "services.soft_dev",
+    description: "services.soft_dev_content",
   },
   {
     icon: <RxPencil2 />,
-    title: "services.designs",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "services.hard_dev",
+    description: "services.hard_dev_content",
   },
   {
     icon: <RxDesktop />,
-    title: "services.development",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "R&D",
+    description: "services.rnd_content",
   },
   {
     icon: <RxReader />,
-    title: "services.copywritting",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "services.implementation",
+    description: "services.implementation_content",
   },
   {
     icon: <RxRocket />,
-    title: "services.seo",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    title: "services.operation",
+    description: "services.operation_content",
   },
 ];
 
 const ServiceSlider = () => {
   const {t} = useTranslation();
   return (
- 
     <Swiper
       breakpoints={{
         320: {
@@ -77,11 +77,13 @@ const ServiceSlider = () => {
               <div className="text-4xl text-accent mb-4"> {item.icon} </div>
               {/* title & desc  */}
               <div className="mb-8">
-                <div className="mb-2 text-lg"> {t(`${item.title}`)} </div>
+                <div className="mb-2 text-md"> {t(`${item.title}`)} </div>
+                <ScrollArea className="h-20">
                 <p className="max-w-[350px] leading-normal ">
-                  {" "}
-                  {item.description}{" "}
+                  {t(`${item.description}`)}{" "}
                 </p>
+                </ScrollArea>
+               
               </div>
               {/* arrow  */}
               <div className="text-3xl">

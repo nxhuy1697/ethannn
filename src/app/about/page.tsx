@@ -26,80 +26,36 @@ import CountUp from "react-countup";
 //  data
 const aboutData = [
   {
-    title: "skills",
+    title: "strat",
     info: [
       {
-        title: "Web Development",
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
-        ],
-        stage: "",
-      },
-      {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-        stage: "",
+        text: "about.para_first",
+    
       },
     ],
   },
   {
-    title: "awards",
+    title: "solution",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-        icons: [""],
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-        icons: [""],
+        text: "about.para_second",
       },
     ],
   },
   {
-    title: "experience",
+    title: "tech",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-        icons: [""],
+        text: "about.para_third",
       },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-        icons: [""],
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-        icons: [""],
-      },
+
     ],
   },
   {
-    title: "credentials",
+    title: "exp",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-        icons: [""],
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-        icons: [""],
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-        icons: [""],
+        text: "about.para_fourth",
       },
     ],
   },
@@ -107,18 +63,16 @@ const aboutData = [
 
 //components
 import Avatar from "@/components/Avatar";
-import Circles from "@/components/Circles";
 
 //translation
 import "@/utils/i18n";
-import { Trans, useTranslation } from "react-i18next";
+import {useTranslation } from "react-i18next";
 
 const About = () => {
   const [index, setIndex] = useState(0);
   const { t } = useTranslation();
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-      <Circles />
       {/* avatar img  */}
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -133,7 +87,6 @@ const About = () => {
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text  */}
         <div className="flex-1 flex flex-col justify-center">
-          <Trans i18nKey="about_title">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -141,11 +94,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            {t('about.title_part1')} <span className="text-accent"> {t('about.title_part2')} </span> 
           </motion.h2>
-
-          </Trans>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
@@ -153,11 +103,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 "
           >
-            {" "}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ipsa
-            aliquid maxime ut harum, eius ratione aliquam expedita, distinctio
-            iste aspernatur commodi! Quasi, quaerat quisquam! Consequuntur
-            aliquid ex itaque quisquam.{" "}
+          {t('about.content')}
           </motion.p>
           {/* counter */}
           <motion.div
@@ -165,8 +111,9 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8 xl:flex-col"
           >
+            <p className="text-white font-bold text-[35px]">CÔNG NGHỆ NỔI BẬT</p>
             <div className="flex flex-1 xl:gap-x-6">
               {/* experience  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
@@ -174,7 +121,7 @@ const About = () => {
                   <CountUp start={0} end={10} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  {t('about.y_o_p')}
+                  3D Laser
                 </div>
               </div>
               {/* clients  */}
@@ -183,7 +130,7 @@ const About = () => {
                   <CountUp start={0} end={250} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  {t('about.client')}
+                PHOTOGRAMMETRY
                 </div>
               </div>
               {/* projects */}
@@ -192,7 +139,7 @@ const About = () => {
                   <CountUp start={0} end={650} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                {t('about.project')}
+                BIM/GIS/IOT 
                 </div>
               </div>
               {/* award  */}
@@ -201,7 +148,7 @@ const About = () => {
                   <CountUp start={0} end={8} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                {t('about.win')}
+                Digital Twin
                 </div>
               </div>
             </div>
@@ -213,7 +160,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px] "
+          className="flex flex-col w-full xl:max-w-[48%] h-[450px] "
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
@@ -244,18 +191,9 @@ const About = () => {
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
                   {/* title  */}
-                  <div className="font-light mb-2 md:mb-0">{item.title} </div>
-                  <div className="hidden md:flex"> - </div>
-                  <div>{item.stage} </div>
-                  <div className="flex gap-x-4">
-                    {item.icons.map((icon, itemIndex) => {
-                      return (
-                        <div className="text-2xl text-white" key={itemIndex}>
-                          {icon}{" "}
-                        </div>
-                      );
-                    })}
-                  </div>
+                  <div className="font-light mb-2 md:mb-0">{t(`${item.text}`)} </div>
+
+                  
                 </div>
               );
             })}

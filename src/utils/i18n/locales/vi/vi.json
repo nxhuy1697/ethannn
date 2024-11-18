@@ -10,38 +10,55 @@
     "about": "Giới Thiệu",
     "services": "Dịch Vụ",
     "work": "Tin Tức",
-    "testmonials": "Tuyển Dụng",
+    "recruit": "Tuyển Dụng",
     "contact": "Liên Hệ"
   },
   "home":{
-    "title_part1": "Biến Các Ý Tưởng",
-    "title_part2": "Thành",
-    "title_part3": "Hiện Thực Số"
+    "title_part1": "Biến Các Ý Tưởng Thành",
+    "title_part2": "Hiện Thực Số",
+    "content_line1":"Với hơn 20 năm kinh nghiệm quản lý, thực hiện dự án công, tư, trong và ngoài nước, chúng tôi hiểu",
+    "content_line2":"nhu cầu và công việc của khách hàng.",
+    "content_line3":"Nền tảng công nghệ số do chúng tôi tạo ra và liên tục phát triển, giải pháp của DP Unity không những",
+    "content_line4":"đáp ứng được nhu cầu công việc mà còn mang lại các giá trị vượt trội."
   },
   "about":{
-    "skills": "Kỹ năng",
-    "awards": "Giải thưởng",
-    "experience": "Kinh nghiệm",
-    "credentials": "Bằng cấp",
-    "y_o_p": "Năm Kinh Nghiệm",
-    "client": "Khách hàng hài lòng",
-    "project": "Dự Án Hoàn Thành",
-    "win": "Giải Thưởng"
+    "title_part1":"Tại Sao Chọn",
+    "title_part2":"DP Unity?",
+    "content":"DPUnity là đơn vị tiên phong trong lĩnh vực chuyển đổi số, với sứ mệnh mang lại các giải pháp công nghệ tối ưu cho doanh nghiệp. DPUnity cam kết cung cấp những giải pháp không chỉ đáp ứng nhu cầu mà còn giúp khách hàng tăng cường hiệu quả hoạt động. Chúng tôi kết hợp giữa chiến lược rõ ràng, công nghệ tiên tiến và đội ngũ giàu kinh nghiệm để đảm bảo rằng mỗi dự án mang lại giá trị vượt trội. Chọn DPUnity, bạn đang chọn đối tác tin cậy.",
+    "strat":"Chiến Lược",
+    "solution": "Giải Pháp",
+    "tech": "Công Nghệ",
+    "exp": "Kinh Nghiệm",
+    "para_first":"Xây dựng mối quan hệ đối tác vững mạnh với nhiều công ty hàng đầu, điều này giúp đảm bảo sự hỗ trợ liên tục và cơ hội phát triển dài hạn cho các dự án.",
+    "para_second":"Cung cấp các giải pháp toàn diện từ tư vấn, phát triển phần mềm, đến triển khai và bảo trì, giúp khách hàng tiết kiệm thời gian, tài nguyên.",
+    "para_third":"Áp dụng các công nghệ tiên tiến như học máy và điện toán đám mây để mang lại những giải pháp hiện đại, thông minh cho doanh nghiệp.",
+    "para_fourth":"Đã tham gia vào nhiều dự án lớn trên quy mô quốc tế, chứng tỏ năng lực xử lý các dự án phức tạp và đáp ứng được yêu cầu của những khách hàng lớn."
   },
   "services": {
-    "title": "Các Dịch Vụ",
-    "branding": "Nhãn Hàng",
-    "designs": "Thiết Kế",
-    "development": "Phát Triển",
-    "copywritting": "Quảng Cáo",
-    "seo": "SEO"
+    "title": "Dịch Vụ",
+    "parah": "DPUnity cung cấp các dịch vụ công nghệ toàn diện giúp doanh nghiệp nâng cao hiệu suất và tối ưu hóa quy trình. Chúng tôi luôn đồng hành cùng khách hàng từ giai đoạn nghiên cứu, phát triển đến triển khai, vận hành hệ thống.",
+    "soft_dev": "Phát Triển Phần Mềm",
+    "soft_dev_content":"Tiếp nhận yêu cầu, tư vấn công nghệ và xây dựng toàn bộ giải pháp theo nhu cầu thực tế của khách hàng.",
+    "hard_dev": "Triển Khai Phần Cứng",
+    "hard_dev_content":"Triển khai phần cứng tương thích tích hợp cùng giải pháp phần mềm.",
+    "implementation": "Tư vấn triển khai.",
+    "implementation_content":"Tư vấn doanh nghiệp triển khai các công nghệ mới bám sát thực tiễn, tối ưu hóa quy trình.",
+    "operation": "Vận Hành Hệ Thống",
+    "operation_content":"Cung cấp dịch vụ hổ trợ liên tục, bảo trì và khắc phục sự cố kịp thời. Quản trị và vận hành toàn bộ hệ thống.",
+    "rnd_content":"Tập trung nghiên cứu công nghệ mới và phát triển các giải pháp sáng tạo, giúp doanh nghiệp bắt kịp xu hướng công nghệ và tối ưu hóa hoạt động."
   },
   "work": {
     "title": "Tin Tức",
     "news": "Bài Báo"
   },
-  "testmonials": {
-    "title": "Tuyển Dụng"
+  "recruit": {
+    "title": "Tuyển Dụng",
+    "intern": "Thực Tập Sinh",
+    "intern_text": "Chúng tôi đang tìm kiếm những thực tập sinh năng động, đam mê công nghệ và muốn học hỏi. Đây là cơ hội tuyệt vời để các bạn sinh viên phát triển kỹ năng, tích lũy kinh nghiệm thực tế. Thực tập sinh sẽ được đào tạo, làm việc trực tiếp với đội ngũ chuyên gia, có cơ hội tham gia vào các công việc thực tế. Nếu bạn mong muốn phát triển sự nghiệp trong ngành công nghệ và muốn thử sức với những thử thách thú vị, hãy gia nhập DPUnity ngay hôm nay!",
+    "dev": "Lập Trình Web/Mobile",
+    "dev_text":"Chúng tôi tìm kiếm các ứng viên có kinh nghiệm vững vàng trong phát triển ứng dụng web (với Next.js, React, v.v.) và mobile (Flutter, React Native, v.v.). Bạn sẽ có cơ hội làm việc với những công nghệ tiên tiến, tham gia vào quy trình phát triển sản phẩm từ thiết kế đến triển khai, đồng thời phát triển kỹ năng trong môi trường làm việc năng động, chuyên nghiệp. Hãy gia nhập DPUnity để phát triển sự nghiệp và tạo ra những sản phẩm công nghệ đột phá!",
+    "program": "Lập Trình Phát Triển",
+    "program_text":"DPUnity đang tìm kiếm lập trình viên phát triển API cho các ứng dụng chuyên ngành trên nền tảng Windows để gia nhập đội ngũ phát triển phần mềm của chúng tôi. Chúng tôi cần những ứng viên có kinh nghiệm vững vàng trong việc thiết kế và phát triển các API mạnh mẽ, hiệu quả, phục vụ cho các ứng dụng chuyên ngành. Bạn sẽ làm việc với các công nghệ như .NET, C#, và các công cụ phát triển trên nền Windows để xây dựng các giải pháp công nghệ tối ưu cho các hệ thống và ứng dụng phức tạp."
   },
   "details": {
     "title": "Chi Tiết"

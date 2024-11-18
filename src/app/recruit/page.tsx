@@ -1,5 +1,4 @@
 "use client"
-import TestimonialSlider from "@/components/TestimonialSlider";
 import React from "react";
 //framer motion
 import { motion } from "framer-motion";
@@ -7,6 +6,7 @@ import { fadeIn } from "../../../variant";
 //translation
 import "@/utils/i18n";
 import { useTranslation } from "react-i18next";
+import RecruitSlider from "@/components/RecruitSlider";
 
 
 const Testimonials = () => {
@@ -22,7 +22,7 @@ const Testimonials = () => {
           exit="hidden"
           className="h2 mb-8 xl:mb-0"
         >
-          {t('testmonials.title')} <span className="text-accent">.</span>
+          {t('recruit.title')} <span className="text-accent">.</span>
         </motion.h2>
         {/* slider  */}
         <motion.div
@@ -31,7 +31,7 @@ const Testimonials = () => {
           animate="show"
           exit="hidden"
         >
-          <TestimonialSlider />
+          <RecruitSlider />
         </motion.div>
       </div>
     </div>
