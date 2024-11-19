@@ -28,7 +28,7 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex absolute bottom-0 "
+            className="hidden xl:flex absolute bottom-0 -left-[270px]"
           >
             <AvatarD />
           </motion.div>
