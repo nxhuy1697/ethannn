@@ -1,10 +1,4 @@
 {
-  "about_title":"<0>Những <1>câu chuyện</1> hấp dẫn tạo ra thiết kế lộng lẫy. </0>",
-  "contact_title":"<0>Liên Hệ Với <1>Chúng Tôi.</1></0>",
-  "contact_form_name": "Tên",
-  "contact_form_subject": "Tiêu Đề",
-  "contact_form_mess": "Nội Dung",
-  "contact_btn": "<0>Gửi!</0>",
   "nav":{
     "home": "Trang Chủ",
     "about": "Giới Thiệu",
@@ -62,6 +56,15 @@
   },
   "details": {
     "title": "Chi Tiết"
+  },
+  "contact":{
+    "title_part1": "Liên Hệ Với",
+    "title_part2": "Chúng Tôi.",
+    "address":"294 Nguyễn Trọng Tuyển, Phường 1, Tân Bình, Tp HCM, Việt Nam",
+    "form_name":"Tên",
+    "form_subject": "Tiêu Đề",
+    "form_mess": "Nội Dung",
+    "form_send": "Gửi"
   }
   
 }

@@ -13,6 +13,7 @@ import { fadeIn } from "../../variant";
 //translation
 import "@/utils/i18n";
 import { useTranslation } from "react-i18next";
+import AvatarD from "@/components/AvatarD";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -27,9 +28,9 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex absolute bottom-0 -left-[370px]"
+            className="hidden xl:flex absolute bottom-0 -left-[270px]"
           >
-            <Avatar />
+            <AvatarD />
           </motion.div>
           <motion.h1
             variants={fadeIn("down", 0.2)}

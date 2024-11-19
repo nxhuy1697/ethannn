@@ -1,8 +1,4 @@
 {
-  "contact_form_name": "Name",
-  "contact_form_subject": "Subject",
-  "contact_form_mess": "Message",
-  "contact_btn": "Send!",
   "nav": {
     "home": "Home",
     "about": "About",
@@ -61,5 +57,14 @@
   },
   "details": {
     "title": "Details"
+  },
+  "contact":{
+    "title_part1": "Contact",
+    "title_part2": "Us.",
+    "address":"294 Nguyen Trong Tuyen, 1st Ward, Tan Binh Dist, HCM City Vietnam",
+    "form_name":"Name",
+    "form_subject": "Subject",
+    "form_mess": "Messages",
+    "form_send": "Send"
   }
 }
