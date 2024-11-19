@@ -5,9 +5,9 @@ const AvatarD = () => {
   return (
     <div className="hidden xl:flex xl:max-w-none">
       <Image
-        src={"/avaD.jpeg"}
-        width={737}
-        height={678}
+        src={"/avaD.png"}
+        width={73}
+        height={778}
         alt=""
         className="translate-z-0 w-full h-full"
       />
