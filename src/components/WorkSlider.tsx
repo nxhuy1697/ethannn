@@ -16,7 +16,7 @@ import {
 } from "react-icons/rx";
 import { BsArrowRight } from "react-icons/bs";
 //import required modules
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -73,7 +73,11 @@ const WorkSlider = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
+      autoplay={{
+        delay: 3000, // 3 giây tự động chuyển slide
+        disableOnInteraction: false, // Tiếp tục autoplay khi người dùng tương tác
+      }}
+      modules={[Pagination, Autoplay]}
       className="h-[280px] sm:h-[480px] "
     >
       {workSlider.slides.map((slide, index) => {

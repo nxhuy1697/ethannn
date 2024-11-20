@@ -20,7 +20,7 @@ const Recruitment = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="h2 mb-8 xl:mb-0"
+          className="h2 my-4 xl:my-0"
         >
           {t('recruit.title')} <span className="text-accent">.</span>
         </motion.h2>

@@ -18,7 +18,7 @@ const Contact = () => {
   const { t } = useTranslation();
   return (
     <div className="h-full bg-primary/30">
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+      <div className="container mx-auto pt-[50px] text-center xl:text-left flex items-center justify-center h-full">
         {/* text & form  */}
         <div className="flex flex-col w-full max-w-[700px]  ">
           {/* text  */}
@@ -28,7 +28,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-white font-bold text-3xl text-left mb-4"
+            className="text-white font-bold text-3xl text-center mb-4"
           >
             {t('contact.title_part1')} <span className="text-accent">{t('contact.title_part2')}</span>
           </motion.p>
@@ -37,7 +37,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-white text-2xl text-left mb-12"
+            className="text-white text-2xl text-center text-[18px] mb-8"
           >
             {t('contact.address')} 
           </motion.p>

@@ -37,7 +37,7 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-[35px] font-bold mb-10"
+            className="text-[28px] sm:text-[50px] font-bold mt-[50px] mb-5"
           >
             {t('home.title_part1')} <span className="text-accent">{t('home.title_part2')} </span>
           </motion.h1>
@@ -49,12 +49,10 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-[710px] max-auto xl:mx-0 mb-10 xl:mb-16 text-right"
+            className="px-3 max-w-sm xl:max-w-[710px] mx-auto xl:mx-0 mb-10 xl:mb-16 text-center xl:text-right h-[250px]"
           >
             <p>{t('home.content_line1')} </p>
             <p>{t('home.content_line2')}</p>
-  
-
           </motion.div>
 
           {/* btn  */}
@@ -73,7 +71,7 @@ export default function Home() {
         </div>
       </div>
       {/* image  */}
-      <div className="w-[1200px] h-full absolute right-0 bottom-0 ">
+      <div className="xl:w-[1200px] h-full absolute right-0 bottom-0 ">
         {/* bg img  */}
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
         {/* practicle  */}

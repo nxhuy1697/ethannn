@@ -49,7 +49,7 @@ const RecruitSlider = () => {
       disableOnInteraction: false, // Tiếp tục autoplay khi người dùng tương tác
     }}
     modules={[Navigation, Pagination, Autoplay]}
-    className="h-[400px]"
+    className="h-[520px]"
   >
     {recruitSlider.map((items, index) => {
       return (
@@ -59,7 +59,7 @@ const RecruitSlider = () => {
             <div className='w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0 '>
               <div className='flex flex-col justify-center items-center'>
                 {/* ava  */}
-                <div className='mb-2 mx-auto rounded-full text-[100px] text-accent '>
+                <div className='mb-2 mx-auto rounded-full xl:text-[100px]  text-[50px] text-accent '>
                 {items.image}
                 </div>
                 {/* name  */}

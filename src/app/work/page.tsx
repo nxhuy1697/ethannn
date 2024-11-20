@@ -19,13 +19,13 @@ const Work = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text  */}
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0 ">
+          <div className="text-center flex sm:mt-[100px] lg:mt-0 xl:w-[30vw] flex-col  xl:mb-0 ">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-12"
+              className="h2 xl:mt-12 mb-0"
             >
               {t('work.title')} <span className="text-accent">.</span>
             </motion.h2>
@@ -34,7 +34,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 "
+              className=" max-w-[400px] mx-auto "
             >
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptatibus explicabo amet vel molestiae inventore veniam,

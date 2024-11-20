@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 function Details() {
     const {t} = useTranslation()
   return (
-    <div className='h-full bg-primary/30 py-32 text-center'>
+    <div className='h-full bg-primary/30 pt-[140px] text-center'>
         <div className='container mx-auto xl:w-[1100px]'>
             <h2 className='h2'>{t('details.title')} <span className='text-accent'>.</span></h2>
             <NewsCard/>
