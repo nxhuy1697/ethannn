@@ -15,7 +15,7 @@ import {
   RxRocket,
 } from "react-icons/rx";
 //import required modules
-import { FreeMode, Pagination } from "swiper/modules";
+import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import { ScrollArea } from "./ui/scroll-area";
 
@@ -63,27 +63,28 @@ const ServiceSlider = () => {
         },
       }}
       freeMode={true}
+      autoplay={{
+        delay: 3000, // 3 giây tự động chuyển slide
+        disableOnInteraction: false, // Tiếp tục autoplay khi người dùng tương tác
+      }}
       pagination={{
         clickable: true,
       }}
-      modules={[FreeMode, Pagination]}
+      modules={[FreeMode, Pagination, Autoplay]}
       className="h-[240px] sm:h-[340px] "
     >
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 ">
+            <div className="bg-[rgba(65,47,123,0.15)] h-[310px] rounded-lg px-6 py-2 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 ">
               {/* icon  */}
               <div className="text-4xl text-accent mb-4"> {item.icon} </div>
               {/* title & desc  */}
               <div className="mb-8">
                 <div className="mb-2 text-md"> {t(`${item.title}`)} </div>
-                <ScrollArea className="h-20">
                 <p className="max-w-[350px] leading-normal ">
                   {t(`${item.description}`)}{" "}
                 </p>
-                </ScrollArea>
-               
               </div>
               {/* arrow  */}
               <div className="text-3xl">

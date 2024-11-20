@@ -1,25 +1,13 @@
 "use client";
 import React, { useState } from "react";
 
+import Image from "next/image";
+
 //framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../variant";
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
+import { FaStar } from "react-icons/fa";
 
 //counter
 import CountUp from "react-countup";
@@ -30,7 +18,7 @@ const aboutData = [
     info: [
       {
         text: "about.para_first",
-    
+        img: "/strat.png",
       },
     ],
   },
@@ -39,6 +27,7 @@ const aboutData = [
     info: [
       {
         text: "about.para_second",
+        img: "/solutions.png",
       },
     ],
   },
@@ -47,8 +36,8 @@ const aboutData = [
     info: [
       {
         text: "about.para_third",
+        img: "/techs.png",
       },
-
     ],
   },
   {
@@ -56,6 +45,7 @@ const aboutData = [
     info: [
       {
         text: "about.para_fourth",
+        img: "/experiences.png",
       },
     ],
   },
@@ -66,7 +56,7 @@ import Avatar from "@/components/Avatar";
 
 //translation
 import "@/utils/i18n";
-import {useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -92,9 +82,10 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="text-[50px] font-bold"
           >
-            {t('about.title_part1')} <span className="text-accent"> {t('about.title_part2')} </span> 
+            {t("about.title_part1")}{" "}
+            <span className="text-accent"> {t("about.title_part2")} </span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -103,7 +94,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 "
           >
-          {t('about.content')}
+            {t("about.content")}
           </motion.p>
           {/* counter */}
           <motion.div
@@ -113,12 +104,15 @@ const About = () => {
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8 xl:flex-col"
           >
-            <p className="text-white font-bold text-[35px]">CÔNG NGHỆ NỔI BẬT</p>
+            <p className="text-white font-bold text-[35px] uppercase">
+              {t("about.outstanding")}
+            </p>
             <div className="flex flex-1 xl:gap-x-6">
               {/* experience  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={10} duration={5} />
+                  <FaStar className="xl:inline-block xl:pb-2 xl:pl-2" />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
                   3D Laser
@@ -127,28 +121,31 @@ const About = () => {
               {/* clients  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={250} duration={5} />
+                  <FaStar className="xl:inline-block xl:pb-2 xl:pl-2" />
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                PHOTOGRAMMETRY
+                <div className="text-xs uppercase  leading-[1.4] max-w-[100px] ">
+                  PHOTOGRAMMETRY
                 </div>
               </div>
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={650} duration={5} />
+                  <FaStar className="xl:inline-block xl:pb-2 xl:pl-2" />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                BIM/GIS/IOT 
+                  BIM/GIS/IOT
                 </div>
               </div>
               {/* award  */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} /> +
+                  <CountUp start={0} end={8} duration={5} />
+                  <FaStar className="xl:inline-block xl:pb-2 xl:pl-2" />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                Digital Twin
+                  Digital Twin
                 </div>
               </div>
             </div>
@@ -183,20 +180,48 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-4 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start xl:h-[100px]">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
+                  {/* img  */}
+                  <Image
+                    src={item.img}
+                    alt=""
+                    width={60}
+                    height={60}
+                    className="mr-2"
+                  />
                   {/* title  */}
-                  <div className="font-light mb-2 md:mb-0">{t(`${item.text}`)} </div>
-
-                  
+                  <div className="font-light mb-2 md:mb-0">
+                    {t(`${item.text}`)}{" "}
+                  </div>
                 </div>
               );
             })}
+          </div>
+          <div className="text-white font-bold uppercase text-right xl:pt-[120px]">
+            {t("about.cde-solution")}{" "}
+          </div>
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="w-full h-full max-w-[400px] max-h-[500px] absolute xl:-bottom-[25%] right-0 "
+        >
+          <div className="hidden xl:flex xl:max-w-none xl:w-[300px] xl:[678px]">
+            <Image
+              src={"/bimnext-logo.png"}
+              width={100}
+              height={200}
+              alt=""
+              className="translate-z-0 w-full h-full"
+            />
           </div>
         </motion.div>
       </div>

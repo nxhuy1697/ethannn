@@ -10,10 +10,10 @@
   "home": {
     "title_part1": "Transforming Ideas Into",
     "title_part2": "Digital Reality",
-    "content_line1": "With over 20 years of experience in managing and executing public and private projects, both",
-    "content_line2": "domestically and internationally, we understand the needs and work of our clients. The digital",
-    "content_line3": "technology platform we have developed and continuously improved ensures that DP Unity's solutions",
-    "content_line4": "not only meet the business requirements but also deliver exceptional value."
+    "content_line1": "With over 20 years of experience in managing and executing public and private projects, both domestically and internationally, we understand the needs and work of our clients.",
+    "content_line2": "The digital technology platform we have developed and continuously improved ensures that DP Unity's solutions not only meet the business requirements but also deliver exceptional value.",
+    "content_line3": "",
+    "content_line4": ""
   },
   "about": {
     "title_part1": "Why",
@@ -26,7 +26,9 @@
     "para_first": "Building strong partnerships with many leading companies, this ensures continuous support and long-term growth opportunities for projects.",
     "para_second": "Providing comprehensive solutions from consulting, software development, to implementation and maintenance, helping clients save time and resources.",
     "para_third": "Applying advanced technologies such as machine learning and cloud computing to deliver modern, intelligent solutions for businesses.",
-    "para_fourth": "Having participated in many large-scale international projects, demonstrating the capability to handle complex projects and meet the demands of major clients."
+    "para_fourth": "Having participated in many large-scale international projects, demonstrating the capability to handle complex projects and meet the demands of major clients.",
+    "outstanding":"Outstanding Technology",
+    "cde-solution":"refer to cde solution"
   },
   "services": {
     "title": "Services",

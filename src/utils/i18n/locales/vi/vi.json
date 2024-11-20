@@ -10,10 +10,10 @@
   "home":{
     "title_part1": "Biến Các Ý Tưởng Thành",
     "title_part2": "Hiện Thực Số",
-    "content_line1":"Với hơn 20 năm kinh nghiệm quản lý, thực hiện dự án công, tư, trong và ngoài nước, chúng tôi hiểu",
-    "content_line2":"nhu cầu và công việc của khách hàng.",
-    "content_line3":"Nền tảng công nghệ số do chúng tôi tạo ra và liên tục phát triển, giải pháp của DP Unity không những",
-    "content_line4":"đáp ứng được nhu cầu công việc mà còn mang lại các giá trị vượt trội."
+    "content_line1":"Với hơn 20 năm kinh nghiệm quản lý, thực hiện dự án công, tư, trong và ngoài nước, chúng tôi hiểu nhu cầu và công việc của khách hàng.",
+    "content_line2":"Nền tảng công nghệ số do chúng tôi tạo ra và liên tục phát triển, giải pháp của DP Unity không những đáp ứng được nhu cầu công việc mà còn mang lại các giá trị vượt trội.",
+    "content_line3":"",
+    "content_line4":""
   },
   "about":{
     "title_part1":"Tại Sao Chọn",
@@ -26,7 +26,9 @@
     "para_first":"Xây dựng mối quan hệ đối tác vững mạnh với nhiều công ty hàng đầu, điều này giúp đảm bảo sự hỗ trợ liên tục và cơ hội phát triển dài hạn cho các dự án.",
     "para_second":"Cung cấp các giải pháp toàn diện từ tư vấn, phát triển phần mềm, đến triển khai và bảo trì, giúp khách hàng tiết kiệm thời gian, tài nguyên.",
     "para_third":"Áp dụng các công nghệ tiên tiến như học máy và điện toán đám mây để mang lại những giải pháp hiện đại, thông minh cho doanh nghiệp.",
-    "para_fourth":"Đã tham gia vào nhiều dự án lớn trên quy mô quốc tế, chứng tỏ năng lực xử lý các dự án phức tạp và đáp ứng được yêu cầu của những khách hàng lớn."
+    "para_fourth":"Đã tham gia vào nhiều dự án lớn trên quy mô quốc tế, chứng tỏ năng lực xử lý các dự án phức tạp và đáp ứng được yêu cầu của những khách hàng lớn.",
+    "outstanding":"Công nghệ nổi bật",
+    "cde-solution":"tham khảo giải pháp CDE"
   },
   "services": {
     "title": "Dịch Vụ",

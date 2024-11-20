@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import RecruitSlider from "@/components/RecruitSlider";
 
 
-const Testimonials = () => {
+const Recruitment = () => {
   const {t} = useTranslation();
   return (
     <div className="h-full bg-primary/30 py-32 text-center">
@@ -38,4 +38,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Recruitment;

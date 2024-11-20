@@ -28,7 +28,7 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex absolute bottom-0 -left-[50px]"
+            className="hidden xl:flex absolute bottom-0 -left-[100px]"
           >
             <AvatarD />
           </motion.div>
@@ -53,8 +53,7 @@ export default function Home() {
           >
             <p>{t('home.content_line1')} </p>
             <p>{t('home.content_line2')}</p>
-            <p>{t('home.content_line3')}</p>
-            <p>{t('home.content_line4')}</p>
+  
 
           </motion.div>
 

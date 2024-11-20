@@ -10,25 +10,26 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 //icons
-import { FaQuoteLeft } from "react-icons/fa";
+import { FaQuoteLeft,FaCode,FaLaptopCode  } from "react-icons/fa";
+import { FaIdCard } from "react-icons/fa6";
 //import required modules
-import {Navigation, Pagination } from "swiper/modules";
+import {Autoplay, Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 import { ScrollArea } from './ui/scroll-area';
 // testimonial data
 const recruitSlider = [
   {
-    image: '/internship.jpg',
+    image: <FaIdCard />,
     name: 'recruit.intern',
     message:'recruit.intern_text'
   },
   {
-    image: '/development.png',
+    image: <FaLaptopCode />,
     name: 'recruit.dev',
     message: 'recruit.dev_text'
   },
   {
-    image: '/code.png',
+    image: <FaCode/>,
     name: 'recruit.program',
     message:'recruit.program_text'
   },
@@ -43,7 +44,11 @@ const RecruitSlider = () => {
     pagination={{
       clickable: true,
     }}
-    modules={[Navigation, Pagination]}
+    autoplay={{
+      delay: 3000, // 3 giây tự động chuyển slide
+      disableOnInteraction: false, // Tiếp tục autoplay khi người dùng tương tác
+    }}
+    modules={[Navigation, Pagination, Autoplay]}
     className="h-[400px]"
   >
     {recruitSlider.map((items, index) => {
@@ -54,25 +59,22 @@ const RecruitSlider = () => {
             <div className='w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0 '>
               <div className='flex flex-col justify-center items-center'>
                 {/* ava  */}
-                <div className='mb-2 mx-auto bg-white rounded-full'>
-                  <Image src={items.image} width={150} height={150} alt='' className='rounded-full' />
+                <div className='mb-2 mx-auto rounded-full text-[100px] text-accent '>
+                {items.image}
                 </div>
                 {/* name  */}
-                <div className='text-lg'>{t(`${items.name}`)}</div>
+                <div className='text-lg text-accent'>{t(`${items.name}`)}</div>
               
               </div>
             </div>
             {/* quote & message */}
             <div className='bg-pink-500/10 flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[250px] relative xl:pl-20 xl:py-4'>
-              {/* quote icon  */}
-              <div className='mb-2'>
-                <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0' />
-              </div>
+             
               {/* message  */}
-              <ScrollArea className='h-20'>
-              <p className='max-w-[600px] xl:text-lg text-center md:text-left'>{t(`${items.message}`)} </p>
 
-              </ScrollArea>
+              <p className='text-white max-w-[600px] xl:text-lg text-center md:text-left'>{t(`${items.message}`)} </p>
+
+
             </div>
           </div>
         </SwiperSlide>
