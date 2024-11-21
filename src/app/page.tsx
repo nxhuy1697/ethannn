@@ -37,7 +37,7 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-[28px] sm:text-[36px] font-bold mt-[50px] mb-5"
+            className="h1 font-bold mt-[50px] mb-5"
           >
             {t('home.title_part1')} <span className="text-accent">{t('home.title_part2')} </span>
           </motion.h1>
