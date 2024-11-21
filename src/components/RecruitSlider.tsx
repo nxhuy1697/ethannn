@@ -48,15 +48,15 @@ const RecruitSlider = () => {
       delay: 3000, // 3 giây tự động chuyển slide
       disableOnInteraction: false, // Tiếp tục autoplay khi người dùng tương tác
     }}
-    modules={[Navigation, Pagination, Autoplay]}
-    className="h-[520px]"
+    modules={[Navigation, Pagination, ]}
+    className="h-[500px]"
   >
     {recruitSlider.map((items, index) => {
       return (
         <SwiperSlide key={index}>
           <div className='flex flex-col items-center md:flex-row gap-x-8 h-full px-16'>
             {/* ava, name, position  */}
-            <div className='w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0 '>
+            <div className=' max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0 '>
               <div className='flex flex-col justify-center items-center'>
                 {/* ava  */}
                 <div className='mb-2 mx-auto rounded-full xl:text-[100px]  text-[50px] text-accent '>
@@ -68,13 +68,11 @@ const RecruitSlider = () => {
               </div>
             </div>
             {/* quote & message */}
-            <div className='bg-pink-500/10 flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[250px] relative xl:pl-20 xl:py-4'>
+            <div className='bg-pink-500/10 flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[250px] relative xl:pl-20 xl:py-4 p-3 xl:p-0 md:w-2/3 '>
              
               {/* message  */}
 
-              <p className='text-white max-w-[600px] xl:text-lg text-center md:text-left'>{t(`${items.message}`)} </p>
-
-
+              <p className='text-white max-w-[600px] xl:text-lg text-center md:text-left text-[15px] mx-2 '>{t(`${items.message}`)} </p>
             </div>
           </div>
         </SwiperSlide>

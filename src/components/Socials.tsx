@@ -11,7 +11,7 @@ import LanguageChanger from "./LanguageToggle";
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-lg">
+    <div className="flex items-center gap-x-5 xl:gap-x-5 md:gap-x-8 text-lg">
       <Link href={""} className="hover:text-accent transition-all duration-300">
         <FaYoutube />
       </Link>

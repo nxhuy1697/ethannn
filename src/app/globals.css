@@ -16,7 +16,9 @@
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   color: #00AB55;
+  font-size: 30px !important;
 }
+
 
 
 @layer base {

@@ -37,7 +37,7 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-[28px] sm:text-[50px] font-bold mt-[50px] mb-5"
+            className="text-[28px] sm:text-[36px] font-bold mt-[50px] mb-5"
           >
             {t('home.title_part1')} <span className="text-accent">{t('home.title_part2')} </span>
           </motion.h1>
@@ -49,10 +49,10 @@ export default function Home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="px-3 max-w-sm xl:max-w-[710px] mx-auto xl:mx-0 mb-10 xl:mb-16 text-center xl:text-right h-[250px]"
+            className="px-3  xl:max-w-[710px] mx-auto xl:mx-0 mb-10 xl:mb-16 text-center xl:text-right h-[250px]"
           >
-            <p>{t('home.content_line1')} </p>
-            <p>{t('home.content_line2')}</p>
+            <p className="md:text-[18px]">{t('home.content_line1')} </p>
+            <p className="md:text-[18px]">{t('home.content_line2')}</p>
           </motion.div>
 
           {/* btn  */}

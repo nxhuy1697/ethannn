@@ -92,7 +92,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-[15px] xl:text[24px]"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 md:mb-[45px] xl:mb-12 px-2 xl:px-0 text-[15px] xl:text[24px]"
           >
             {t("about.content")}
           </motion.p>
@@ -112,7 +112,7 @@ const About = () => {
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="sm:flex sm:justify-center text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={10} duration={5} />
-                  <FaStar className="xl:inline-block xl:pb-2 xl:pl-2" />
+                  <FaStar className="inline-block  md:mt-1  md:ml-2 xl:mt-0" />
                 </div>
                 <div className="sm:ml-2 text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
                   3D Laser
@@ -122,7 +122,7 @@ const About = () => {
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="sm:flex sm:justify-center text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={250} duration={5} />
-                  <FaStar className="xl:inline-block xl:pb-2 xl:pl-2" />
+                  <FaStar className="inline-block md:mt-1  md:ml-2 xl:mt-0" />
                 </div>
                 <div className="sm:ml-2 text-xs uppercase  leading-[1.4] max-w-[100px] ">
                   PHOTOGRAMMETRY
@@ -132,7 +132,7 @@ const About = () => {
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="sm:flex sm:justify-center text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={650} duration={5} />
-                  <FaStar className="xl:inline-block xl:pb-2 xl:pl-2" />
+                  <FaStar className="inline-block md:mt-1  md:ml-2 xl:mt-0" />
                 </div>
                 <div className="sm:ml-2 text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
                   BIM/GIS/IOT
@@ -142,7 +142,7 @@ const About = () => {
               <div className="relative flex-1">
                 <div className="sm:flex sm:justify-center text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={8} duration={5} />
-                  <FaStar className="xl:inline-block xl:pb-2 xl:pl-2" />
+                  <FaStar className="inline-block md:mt-1  md:ml-2 xl:mt-0" />
                 </div>
                 <div className="sm:ml-2 text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
                   Digital Twin
@@ -196,7 +196,7 @@ const About = () => {
                     className="mr-2 hidden xl:block"
                   />
                   {/* title  */}
-                  <div className="font-light mb-2 md:mb-0 text-[15px] px-2">
+                  <div className="font-light mb-2 md:mb-0 md:mx-[30px] xl:mx-0 text-[15px] px-2">
                     {t(`${item.text}`)}{" "}
                   </div>
                 </div>
