@@ -34,6 +34,7 @@ const Recruitment = () => {
           <RecruitSlider />
         </motion.div>
       </div>
+  
     </div>
   );
 };

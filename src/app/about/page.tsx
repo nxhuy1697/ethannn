@@ -111,27 +111,27 @@ const About = () => {
               {/* experience  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="sm:flex sm:justify-center text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />
+                  <CountUp start={0} end={5} duration={5} />
                   <FaStar className="inline-block  md:mt-1  md:ml-2 xl:mt-0" />
                 </div>
-                <div className="sm:ml-2 text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
+                <div className="sm:ml-2 xl:ml-7 text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
                   3D Laser
                 </div>
               </div>
               {/* clients  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="sm:flex sm:justify-center text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />
+                  <CountUp start={0} end={5} duration={5} />
                   <FaStar className="inline-block md:mt-1  md:ml-2 xl:mt-0" />
                 </div>
-                <div className="sm:ml-2 text-xs uppercase  leading-[1.4] max-w-[100px] ">
+                <div className="sm:ml-2 xl:ml-0 text-xs uppercase  leading-[1.4] max-w-[100px] ">
                   PHOTOGRAMMETRY
                 </div>
               </div>
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="sm:flex sm:justify-center text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} />
+                  <CountUp start={0} end={5} duration={5} />
                   <FaStar className="inline-block md:mt-1  md:ml-2 xl:mt-0" />
                 </div>
                 <div className="sm:ml-2 text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
@@ -141,7 +141,7 @@ const About = () => {
               {/* award  */}
               <div className="relative flex-1">
                 <div className="sm:flex sm:justify-center text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} />
+                  <CountUp start={0} end={5} duration={5} />
                   <FaStar className="inline-block md:mt-1  md:ml-2 xl:mt-0" />
                 </div>
                 <div className="sm:ml-2 text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
@@ -212,7 +212,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="w-full xl:h-full max-w-[400px] max-h-[500px] absolute xl:-bottom-[25%] right-0 "
+          className="absolute xl:bottom-[25%] xl:right-[10%] "
         >
           <div className="hidden xl:flex xl:max-w-none xl:w-[300px] xl:[678px]">
             <Image
