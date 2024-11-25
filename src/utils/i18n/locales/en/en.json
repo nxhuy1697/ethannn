@@ -10,8 +10,8 @@
   "home": {
     "title_part1": "Transforming Ideas Into",
     "title_part2": "Digital Reality",
-    "content_line1": "With over 20 years of experience in managing and executing public and private projects, both domestically and internationally, we understand the needs and work of our clients.",
-    "content_line2": "The digital technology platform we have developed and continuously improved ensures that DP Unity's solutions not only meet the business requirements but also deliver exceptional value.",
+    "content_line1": "With over 20 years of experience in managing and executing public and private projects, both domestically and internationally, we understand the needs and work of our clients. The digital technology platform we have developed and continuously improved ensures that DP Unity's solutions not only meet the business requirements but also deliver exceptional value.",
+    "content_line2": "",
     "content_line3": "",
     "content_line4": ""
   },
@@ -67,6 +67,11 @@
     "form_name":"Name",
     "form_subject": "Subject",
     "form_mess": "Messages",
-    "form_send": "Send"
+    "form_send": "Send",
+    "vali_name": "Name can not be empty!",
+    "vali_invalidEmail": "invalid email!",
+    "vali_emptyEmail": "email can not be empty!",
+    "vali_subject": "subject can not be empty!",
+    "vali_message": "messsges can not be empty!"
   }
 }

@@ -8,10 +8,10 @@
     "contact": "Liên Hệ"
   },
   "home":{
-    "title_part1": "Biến Các Ý Tưởng Thành",
+    "title_part1": "Biến Ý Tưởng Thành",
     "title_part2": "Hiện Thực Số",
-    "content_line1":"Với hơn 20 năm kinh nghiệm quản lý, thực hiện dự án công, tư, trong và ngoài nước, chúng tôi hiểu nhu cầu và công việc của khách hàng.",
-    "content_line2":"Nền tảng công nghệ số do chúng tôi tạo ra và liên tục phát triển, giải pháp của DP Unity không những đáp ứng được nhu cầu công việc mà còn mang lại các giá trị vượt trội.",
+    "content_line1":"Với hơn 20 năm kinh nghiệm quản lý, thực hiện dự án công, tư, trong và ngoài nước, chúng tôi hiểu nhu cầu và công việc của khách hàng. Nền tảng công nghệ số do chúng tôi tạo ra và liên tục phát triển, giải pháp của DP Unity không những đáp ứng được nhu cầu công việc mà còn mang lại các giá trị vượt trội.",
+    "content_line2":"",
     "content_line3":"",
     "content_line4":""
   },
@@ -66,7 +66,12 @@
     "form_name":"Tên",
     "form_subject": "Tiêu Đề",
     "form_mess": "Nội Dung",
-    "form_send": "Gửi"
+    "form_send": "Gửi",
+    "vali_name": "tên không được bỏ trống!",
+    "vali_invalidEmail": "email không hợp lệ!",
+    "vali_emptyEmail": "email không được bỏ trống!",
+    "vali_subject": "tiêu đề không được bỏ trống!",
+    "vali_message": "nội dung không được bỏ trống!"
   }
   
 }
