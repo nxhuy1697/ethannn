@@ -57,6 +57,8 @@ import Avatar from "@/components/Avatar";
 //translation
 import "@/utils/i18n";
 import { useTranslation } from "react-i18next";
+//next link
+import Link from "next/link";
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -207,7 +209,8 @@ const About = () => {
             {t("about.cde-solution")}{" "}
           </div>
         </motion.div>
-        <motion.div
+        <motion.a
+        href="https://bimnext.dpunity.com"
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           animate="show"
@@ -215,6 +218,7 @@ const About = () => {
           className="absolute xl:bottom-[25%] xl:right-[10%] "
         >
           <div className="hidden xl:flex xl:max-w-none xl:w-[300px] xl:[678px]">
+            
             <Image
               src={"/bimnext-logo.png"}
               width={100}
@@ -223,7 +227,7 @@ const About = () => {
               className="translate-z-0 w-full h-full"
             />
           </div>
-        </motion.div>
+        </motion.a>
       </div>
     </div>
   );
