@@ -51,11 +51,10 @@
   "recruit": {
     "title": "Recruitment",
     "intern": "Internship",
-    "intern_text":"We are looking for dynamic interns who are passionate about technology and eager to learn. This is a great opportunity for students to develop their skills and gain practical experience. Interns will receive training, work directly with a team of experts, and have the chance to participate in real-world tasks. If you wish to develop your career in the technology industry and take on exciting challenges, join DPUnity today!",
+    "intern_text":"We are looking for dynamic interns who are passionate about technology and eager to learn. This is a great opportunity for students to develop their skills and gain practical experience. Interns will receive training, work directly with a team of experts, and participate in real projects. If you aspire to grow your career in the technology industry and want to take on exciting challenges, join DPUnity today!",
     "dev": "Web/Mobile Developer",
-    "dev_text":"We are looking for candidates with strong experience in web application development (using Next.js, React, etc.) and mobile development (Flutter, React Native, etc.). You will have the opportunity to work with advanced technologies, participate in the product development process from design to deployment, and develop your skills in a dynamic, professional work environment. Join DPUnity to grow your career and create groundbreaking technology products!",
-    "program": "Deployment Programming",
-    "program_text":"DPUnity is looking for API developers for industry-specific applications on the Windows platform to join our software development team. We need candidates with strong experience in designing and developing robust and efficient APIs for industry-specific applications. You will work with technologies such as .NET, C#, and Windows development tools to build optimal technology solutions for complex systems and applications."
+    "dev_text":"We are looking for candidates with strong experience in web application development and mobile development. You will have the opportunity to work with advanced technologies, participate in the product development process from design to deployment, and develop your skills in a dynamic, professional work environment. Join DPUnity to grow your career and create groundbreaking technology products!",
+    "program_text":"DPUnity is looking for API developers for industry-specific applications on the Windows platform to join our software development team. We need candidates with strong experience in developing APIs for industry-specific applications. You will work with technologies such as .NET, C#, and Windows development tools to build optimal technology solutions for complex systems and applications."
   },
   "details": {
     "title": "Details"

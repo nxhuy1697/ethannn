@@ -88,7 +88,7 @@ const Nav = () => {
                 <TooltipContent
                   side="right"
                   sideOffset={8}
-                  className="z-50 bg-white text-primary text-[12px] font-semibold capitalize py-[2px] rounded-md shadow-md dark:bg-gray-800 dark:text-white border border-gray-200 dark:border-gray-700"
+                  className="z-50 bg-white text-primary text-[12px] font-semibold capitalize py-[2px] hidden xl:block  rounded-md shadow-md dark:bg-gray-800 dark:text-white border border-gray-200 dark:border-gray-700"
                 >
                   {t(`${link.name}`)}
                 </TooltipContent>
